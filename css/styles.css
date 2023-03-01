@@ -1,0 +1,107 @@
+
+/* tags section */
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    padding-top: 7rem;
+    font-size: 18px;
+    background-position: right 50vw bottom 50vh;
+    background-color: hsl(185, 75%, 39%);
+  }
+p{
+    color: grey;
+    margin-top: 0;
+}
+header img{
+    border-radius: 12px 12px 0 0;
+    width:min(100%,400px);
+}
+footer { 
+    padding-top: 2rem;
+    font-size: 11px; 
+    text-align: center; 
+}
+footer a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* container section */
+
+.main-container{
+    margin-inline: auto;
+    border-radius: 12px;
+    width: min(100%, 400px);
+    background-color: white;
+    text-align: center;
+}
+.stats-container{
+    border-top: 1px solid hsl(0,10%,88%);
+    display: flex;
+    justify-content: space-around;
+}
+.name-container{
+    margin-top: 30px;
+    display: flex;
+}
+
+/* inner attributes and tags of containers */
+
+.name-container p{
+    font-size: larger;
+    margin: 1.5rem 0;
+    padding: 4px 0 0 0 ;
+}
+.name-container h1{
+    font-size: xx-large;
+    margin-left: 4rem;
+    padding: 0 1.5rem;
+}
+.stats-container p{
+    padding-top: 0;
+    margin-top: 0;
+}
+.stats-container h2{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* profile picture */
+
+#profile-picture{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -50px auto -30px auto;
+    border: 5px solid white;
+}
+
+
+/* media queries for responsiveness */
+
+@media (max-width:355px){
+    .stats-container h2{
+        font-size: 1.3rem;
+    }
+    .name-container h1{
+        font-size: x-large;
+        margin-left: 3rem;
+        padding: 0.4rem 1rem;
+    }
+    .name-container p{
+        font-size: large;
+    }
+    body{
+        padding-top: 5rem;
+    }
+
+}
+@media (max-width:280px){
+    #profile-picture{
+        width: 85px;
+        height:85px;
+    }
+    .name-container h1{
+        margin-left: 1.5rem;
+    }
+}
